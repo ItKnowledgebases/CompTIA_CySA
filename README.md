@@ -88,7 +88,9 @@ Notes for the CompTIA CySA+ course
   - https://public.cyber.mil/stigs/
 - Password List
   - cirt.net/passwords (default passwords) 
-
+- Useful info
+  - https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/
+  - https://www.sans.org/information-security-policy/?per-page=100
 ## 1. Assessing Information Security Risk
 
 <details>
@@ -213,6 +215,19 @@ Notes for the CompTIA CySA+ course
 ---
 
 ## 6. Collecting Cybersecurity Intelligence
+- **Security Content Automation Protocol (SCAP)
+  - Protocol is an agreement between two parties on how something is going to work
+  - SCAP Languages
+      - Open Vulnerabilities and Assessment Language (OVAL) Consistent and interoperable. Assess information regardless of the security tools
+      - Asset Reporting Formart (ARF): Correlate reporting formats.
+      - Extensible Configuration Checklist Descriptiion Format (SCCDF)
+- SCAP Identification Schemes
+     - Common Platform endumeration (CPE)
+     - Common Vulnerabilites and Exposure (CVE)
+     - Common Configuration Enumeration (CCE)
+- **Common Vulnerability Scoring System (CVSS)**
+    - first.org/cvss/v3.1/examples
+    - ![image](https://github.com/user-attachments/assets/dc0ad186-4878-4426-8ef6-4ce9350b5342)
 
 - **Security Intelligence Platforms:**  
   Deploy platforms for collecting and analyzing security data.
@@ -282,7 +297,8 @@ Notes for the CompTIA CySA+ course
   In every step—from risk assessment to incident investigation—thorough documentation ensures accountability and continuous improvement.
 - **Continuous Learning:**  
   Cybersecurity is an ever-evolving field. Stay updated with the latest threats, mitigation strategies, and industry standards.
-
+- **REPEATED KEYWORDS**
+  - Shadow IT: people take it upon themselves to install software 
 ---
 
 
