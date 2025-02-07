@@ -91,6 +91,13 @@ Notes for the CompTIA CySA+ course
 - Useful info
   - https://www.sans.org/blog/the-ultimate-list-of-sans-cheat-sheets/
   - https://www.sans.org/information-security-policy/?per-page=100
+ 
+- PORT ASSIGNMENT REGISTRY:
+  - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?
+   - Request for Comment (RFC): method of getting comments to see if a new method of communication can be added to the registery 
+
+
+
 ## 1. Assessing Information Security Risk
 
 <details>
@@ -297,7 +304,17 @@ Notes for the CompTIA CySA+ course
     - Command and Control (C2C or C2)
         - bot beacons home and conducts simple transactions.
         - remote code execution remotely on a massive scale.
-        - uses HTTP/HTTPS /DNS Tunneling/ Internet relay chat (IRC/ Port 6667)
+        - uses HTTP/HTTPS /DNS Tunneling/ Internet relay chat (IRC clear text: port 6665-6669/ IRC over SSL: 6679/6697)
+     
+- Protect against rogue devices
+      - Static IP Addresses
+      - 802.1x network access control
+      - (Physical) and (Logical) Port-Based Access Control
+      - IDS
+      - Network Scans
+- **Non-standard Port Mitigation**
+The best way of mitigating use of non-standard ports is to configure firewalls to allow only whitelisted ports to communicate on ingress and egress interfaces.
+
 - **Identity and Access Management (IAM):**  
   Identify and remediate issues within IAM frameworks.
 - **Security During the SDLC:**  
@@ -306,13 +323,19 @@ Notes for the CompTIA CySA+ course
 ---
 
 ## Final Notes
-
+- **NMAP**
+   - common nmap options
+   - syn
+   - connect
+   - udp
+   - ports
 - **Documentation is Key:**  
   In every step—from risk assessment to incident investigation—thorough documentation ensures accountability and continuous improvement.
 - **Continuous Learning:**  
   Cybersecurity is an ever-evolving field. Stay updated with the latest threats, mitigation strategies, and industry standards.
 - **REPEATED KEYWORDS**
-  - Shadow IT: people take it upon themselves to install software 
+  - Shadow IT: people take it upon themselves to install software
+- **NEVER MOVE DNS OR NTP Port assignment**
 ---
 
 
