@@ -283,7 +283,21 @@ Notes for the CompTIA CySA+ course
 ---
 
 ## 11. Addressing Security Architecture Issues
-
+- **Network Attacks**
+    - DDOS indicatior = Traffic spike
+        - *Worm Activity* : high volumes of traffic saturating switches and router interfaces.
+        - *Reflection or amplification attack* : the attacker spoofs victims IP and uses the IP to communicate with multiple servers.
+        - *DNS reflection attack* : small dns request with spoofed IP to generate a very large response.
+        - *Network Time Protocol (NTP)* : monlist command can be abused to generate large traffic volumes. ex) small query to request the last 600 machines contacted by the ntp server results in a large response. The monlist request from a server with 600 addresses in its memory will be 206 times larger than the initial request. This means that an attacker with 1 GB of internet traffic can deliver a 200+ gigabyte attack — a massive increase in the resulting attack traffic.
+    - DDOS MITIGATION
+        - Real tiem analysis of log files.
+        - Suspicious traffice to blackhoke, especially if automated.
+        - GEOlocation & IP reputation
+        - services like cloudflare.
+    - Command and Control (C2C or C2)
+        - bot beacons home and conducts simple transactions.
+        - remote code execution remotely on a massive scale.
+        - uses HTTP/HTTPS /DNS Tunneling/ Internet relay chat (IRC/ Port 6667)
 - **Identity and Access Management (IAM):**  
   Identify and remediate issues within IAM frameworks.
 - **Security During the SDLC:**  
